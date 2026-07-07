@@ -1,3 +1,3 @@
-tester_id,age_stage,current_city,mobility_choice,top_1_career,top_2_career,top_3_career,accuracy_score,clarity_score,action_willingness,least_accurate_part,reason_notes,next_iteration_tag
-T001,高中,杭州,regional,产品经理,用户体验研究员,数据分析师,4,4,yes,城市推荐,"城市还想看到生活成本和离家距离解释",city_explanation
-T002,大学,上海,national,数据分析师,金融科技/风险分析师,产品经理,3,5,maybe,职业推荐,"用户原本更想做创意方向，题目可能没有捕捉到",career_weight
+tester_id,test_date,age_stage,current_city,mobility_choice,device,completion_minutes,top_1_career,top_2_career,top_3_career,accuracy_score,clarity_score,city_fit_score,major_fit_score,action_willingness,clicked_detail,downloaded_report,least_accurate_part,most_useful_part,reason_notes,next_iteration_tag,follow_up_priority
+T001,2026-07-07,高中,杭州,regional,mobile,8,产品经理,用户体验研究员,数据分析师,4,4,3,4,yes,yes,no,城市推荐,职业解释,"城市还想看到生活成本和离家距离解释",city_explanation,medium
+T002,2026-07-07,大学,上海,national,desktop,10,数据分析师,金融科技/风险分析师,产品经理,3,5,4,3,maybe,yes,yes,职业推荐,职业对比,"用户原本更想做创意方向，题目可能没有捕捉到",career_weight,high

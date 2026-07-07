@@ -5,6 +5,7 @@ __pycache__/
 *.pyc
 *.log
 *.optimized.jpg
+*.private.csv
 .DS_Store
 Thumbs.db
 node_modules/

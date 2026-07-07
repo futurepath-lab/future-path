@@ -19,6 +19,7 @@ const requiredFiles = [
   "docs/github-pages-publish-guide.md",
   "docs/beta-feedback.html",
   "docs/beta-test-guide.html",
+  "docs/feedback-analysis-board.md",
   "docs/privacy-and-disclaimer.html",
   "docs/privacy-and-disclaimer.md",
   path.join("..", ".github", "workflows", "deploy-future-career-site.yml"),
