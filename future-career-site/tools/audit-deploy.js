@@ -17,6 +17,7 @@ const requiredFiles = [
   "data/majors.sample.json",
   "docs/deployment-checklist.md",
   "docs/github-pages-publish-guide.md",
+  "docs/beta-feedback.html",
   "docs/beta-test-guide.html",
   "docs/privacy-and-disclaimer.html",
   "docs/privacy-and-disclaimer.md",
@@ -60,6 +61,9 @@ function auditRelativeReferences() {
   }
   if (!html.includes("./docs/beta-test-guide.html")) {
     fail("index.html should link to the beta test guide.");
+  }
+  if (!html.includes("./docs/beta-feedback.html")) {
+    fail("index.html should link to the beta feedback form.");
   }
 
   const absoluteRefPattern = /(src|href)="\/(?!\/)/;

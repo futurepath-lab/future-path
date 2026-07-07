@@ -1,5 +1,5 @@
 window.FuturePathCatalog = {
-  "generatedAt": "2026-07-07T01:33:35.337Z",
+  "generatedAt": "2026-07-07T02:14:37.293Z",
   "careers": [
     {
       "id": "ux-researcher",

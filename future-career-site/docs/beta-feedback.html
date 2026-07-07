@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>提交试用反馈 | Future Path</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <main class="doc-page">
+      <a class="text-button doc-back" href="../index.html">返回首页</a>
+      <article class="doc-article">
+        <p class="eyebrow">Beta Feedback</p>
+        <h1>试用反馈</h1>
+        <p>
+          填完后点击“生成并复制反馈”，把复制出的文字发给项目作者即可。当前页面不会把内容上传到服务器。
+        </p>
+
+        <form class="feedback-form" id="betaFeedbackForm">
+          <label>
+            <span>你的阶段</span>
+            <select name="stage">
+              <option value="高中">高中</option>
+              <option value="大学">大学</option>
+              <option value="研究生">研究生</option>
+              <option value="已工作">已工作</option>
+              <option value="其他">其他</option>
+            </select>
+          </label>
+
+          <label>
+            <span>当前城市或地区</span>
+            <input name="city" type="text" placeholder="例如：杭州、上海、山东" />
+          </label>
+
+          <label>
+            <span>你拿到的前三个推荐职业</span>
+            <input name="careers" type="text" placeholder="例如：产品经理、用户体验研究员、数据分析师" />
+          </label>
+
+          <label>
+            <span>第一个推荐像不像你？</span>
+            <select name="accuracy">
+              <option value="5">5 分，很像</option>
+              <option value="4">4 分，比较像</option>
+              <option value="3">3 分，一般</option>
+              <option value="2">2 分，不太像</option>
+              <option value="1">1 分，完全不像</option>
+            </select>
+          </label>
+
+          <label>
+            <span>推荐理由是否清楚？</span>
+            <select name="clarity">
+              <option value="5">5 分，很清楚</option>
+              <option value="4">4 分，比较清楚</option>
+              <option value="3">3 分，一般</option>
+              <option value="2">2 分，有点模糊</option>
+              <option value="1">1 分，看不懂</option>
+            </select>
+          </label>
+
+          <label>
+            <span>看完后是否愿意做一个入门项目？</span>
+            <select name="action">
+              <option value="愿意">愿意</option>
+              <option value="可能会">可能会</option>
+              <option value="暂时不会">暂时不会</option>
+            </select>
+          </label>
+
+          <label class="wide-field">
+            <span>最不准确或最困惑的地方</span>
+            <textarea name="leastAccurate" rows="4" placeholder="例如：城市推荐不太符合我的真实选择；专业建议太宽泛。"></textarea>
+          </label>
+
+          <label class="wide-field">
+            <span>你希望下一版增加什么？</span>
+            <textarea name="suggestion" rows="4" placeholder="例如：希望加入薪资区间、大学专业课程、真实岗位链接。"></textarea>
+          </label>
+
+          <button class="primary-button" type="button" id="copyFeedbackButton">生成并复制反馈</button>
+          <p class="save-status" id="copyFeedbackStatus" aria-live="polite"></p>
+        </form>
+
+        <textarea class="feedback-output" id="feedbackOutput" rows="10" readonly></textarea>
+      </article>
+    </main>
+
+    <script>
+      const form = document.querySelector("#betaFeedbackForm");
+      const output = document.querySelector("#feedbackOutput");
+      const status = document.querySelector("#copyFeedbackStatus");
+
+      function buildFeedbackText() {
+        const data = new FormData(form);
+        return [
+          "Future Path 试用反馈",
+          `阶段：${data.get("stage")}`,
+          `城市/地区：${data.get("city") || "未填写"}`,
+          `前三个推荐职业：${data.get("careers") || "未填写"}`,
+          `推荐准确度：${data.get("accuracy")} / 5`,
+          `解释清晰度：${data.get("clarity")} / 5`,
+          `是否愿意做入门项目：${data.get("action")}`,
+          `最不准确或困惑的地方：${data.get("leastAccurate") || "未填写"}`,
+          `希望下一版增加：${data.get("suggestion") || "未填写"}`
+        ].join("\\n");
+      }
+
+      document.querySelector("#copyFeedbackButton").addEventListener("click", async () => {
+        const text = buildFeedbackText();
+        output.value = text;
+
+        try {
+          await navigator.clipboard.writeText(text);
+          status.textContent = "已复制，可以直接发给项目作者。";
+        } catch (error) {
+          output.focus();
+          output.select();
+          status.textContent = "已生成反馈，请手动复制下方文本。";
+        }
+      });
+    </script>
+  </body>
+</html>

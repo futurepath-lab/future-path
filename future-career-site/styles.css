@@ -1363,6 +1363,51 @@ button {
   text-decoration: none;
 }
 
+.secondary-doc-link {
+  margin-left: 8px;
+  border: 1px solid rgba(31, 105, 100, 0.24);
+  background: #e9f7f4;
+  color: var(--teal-dark);
+}
+
+.feedback-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.feedback-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea,
+.feedback-output {
+  width: 100%;
+  border: 1px solid #d7e2e3;
+  border-radius: 8px;
+  padding: 11px 12px;
+  background: white;
+  color: var(--ink);
+  font: inherit;
+}
+
+.wide-field,
+.feedback-form .primary-button,
+.feedback-form .save-status {
+  grid-column: 1 / -1;
+}
+
+.feedback-output {
+  margin-top: 16px;
+  resize: vertical;
+}
+
 .timeline-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1532,6 +1577,10 @@ button {
   }
 
   .catalog-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-form {
     grid-template-columns: 1fr;
   }
 
