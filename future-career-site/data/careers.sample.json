@@ -1,0 +1,364 @@
+[
+  {
+    "id": "ux-researcher",
+    "title": "用户体验研究员",
+    "family": "技术产品与数据",
+    "tags": ["研究", "用户", "产品"],
+    "summary": "适合把人的真实需求、行为和痛点转化成产品或服务改进方向。",
+    "weights": {
+      "research": 3,
+      "empathy": 3,
+      "social": 2,
+      "structure": 1
+    },
+    "roles": ["用户访谈", "问卷研究", "可用性测试", "用户画像", "洞察报告"],
+    "skills": ["访谈方法", "问卷设计", "基础统计", "产品思维", "报告表达"],
+    "barrier": {
+      "level": 3,
+      "label": "中等门槛",
+      "reasons": ["需要研究方法训练", "需要把人的体验转化成清晰报告"]
+    },
+    "dropout_points": ["研究结论可能需要反复解释和推动", "用户需求和业务目标有时会冲突"],
+    "evidence": ["一份 5 人访谈报告", "一个用户旅程图", "一次可用性测试记录"],
+    "major_plan": {
+      "primary": ["心理学", "社会学", "人机交互"],
+      "secondary": ["传播学", "信息管理"],
+      "supporting": ["统计学", "产品设计"]
+    },
+    "city_ids": ["shanghai", "shenzhen", "singapore", "vancouver"],
+    "first_project": "访谈 5 位同学，分析他们选择学习 App 的真实原因。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "data-analyst",
+    "title": "数据分析师",
+    "family": "技术产品与数据",
+    "tags": ["数据", "商业", "逻辑"],
+    "summary": "适合从复杂信息中找规律，用证据支持业务和管理决策。",
+    "weights": {
+      "research": 3,
+      "tech": 3,
+      "structure": 2,
+      "riskAware": 1
+    },
+    "roles": ["商业分析", "运营分析", "市场分析", "数据可视化", "指标体系搭建"],
+    "skills": ["Excel", "SQL", "Python", "统计基础", "业务理解", "可视化表达"],
+    "barrier": {
+      "level": 4,
+      "label": "较高门槛",
+      "reasons": ["需要工具基础", "需要统计和业务理解结合"]
+    },
+    "dropout_points": ["前期工具练习可能枯燥", "数据质量和业务口径经常不完美"],
+    "evidence": ["一页公开数据分析报告", "一个可复用的数据看板", "5 个岗位能力要求对照表"],
+    "major_plan": {
+      "primary": ["统计学", "数据科学", "商业分析"],
+      "secondary": ["信息系统", "经济学"],
+      "supporting": ["Python", "SQL", "数据可视化"]
+    },
+    "city_ids": ["shenzhen", "hangzhou", "shanghai", "beijing", "singapore"],
+    "first_project": "找一个公开数据集，做一页图表报告解释三个关键发现。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "product-manager",
+    "title": "产品经理",
+    "family": "技术产品与数据",
+    "tags": ["产品", "协调", "创新"],
+    "summary": "适合连接用户、技术和商业，把想法推进成真实产品。",
+    "weights": {
+      "leadership": 2,
+      "social": 2,
+      "tech": 1,
+      "structure": 2,
+      "empathy": 2
+    },
+    "roles": ["需求分析", "产品设计", "原型制作", "项目协调", "增长策略"],
+    "skills": ["产品文档", "原型设计", "沟通协调", "基础数据分析", "行业理解"],
+    "barrier": {
+      "level": 3,
+      "label": "中等门槛",
+      "reasons": ["需要同时理解用户、技术和商业", "需要协调多人推进结果"]
+    },
+    "dropout_points": ["需求会反复变化", "需要在用户体验、技术成本和商业目标之间取舍"],
+    "evidence": ["一份产品需求文档", "一个低保真原型", "一次竞品拆解报告"],
+    "major_plan": {
+      "primary": ["计算机科学", "信息管理", "工商管理"],
+      "secondary": ["工业设计", "心理学"],
+      "supporting": ["数据分析", "用户研究", "项目管理"]
+    },
+    "city_ids": ["beijing", "shanghai", "shenzhen", "hangzhou", "singapore"],
+    "first_project": "选一个常用 App，写一份改版需求文档和低保真原型。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "software-engineer",
+    "title": "软件开发工程师",
+    "family": "技术产品与数据",
+    "tags": ["技术", "建造", "系统"],
+    "summary": "适合把抽象问题变成稳定、可复用的工具、系统或应用。",
+    "weights": {
+      "tech": 4,
+      "research": 2,
+      "structure": 2,
+      "autonomy": 1
+    },
+    "roles": ["前端开发", "后端开发", "移动开发", "AI 应用开发", "测试工程"],
+    "skills": ["编程基础", "算法", "工程实践", "调试能力", "版本管理"],
+    "barrier": {
+      "level": 5,
+      "label": "高门槛",
+      "reasons": ["需要持续练习编程和工程基础", "需要能接受反复调试和长期积累"]
+    },
+    "dropout_points": ["前期反馈慢，容易卡在环境、报错和基础概念", "技术更新快，需要持续学习"],
+    "evidence": ["一个可运行的小网站", "一个自动化脚本", "一份代码项目复盘"],
+    "major_plan": {
+      "primary": ["计算机科学", "软件工程", "人工智能"],
+      "secondary": ["信息系统", "数据科学"],
+      "supporting": ["产品设计", "项目管理"]
+    },
+    "city_ids": ["shenzhen", "hangzhou", "beijing", "singapore"],
+    "first_project": "做一个能解决自己真实需求的小网站或自动化脚本。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "fintech-risk-analyst",
+    "title": "金融科技/风险分析师",
+    "family": "技术产品与数据",
+    "tags": ["金融", "数据", "风险"],
+    "summary": "适合在高信息密度环境中识别风险、建立规则并支持决策。",
+    "weights": {
+      "research": 3,
+      "tech": 2,
+      "structure": 2,
+      "riskAware": 3
+    },
+    "roles": ["风控分析", "量化研究助理", "信贷分析", "反欺诈策略", "合规科技"],
+    "skills": ["统计", "SQL/Python", "金融基础", "风险建模", "合规意识"],
+    "barrier": {
+      "level": 5,
+      "label": "高门槛",
+      "reasons": ["需要数据工具和金融基础", "需要严谨的风险意识和规则理解"]
+    },
+    "dropout_points": ["规则和数据口径复杂", "结果压力和合规要求都比较强"],
+    "evidence": ["一个简单风险指标分析", "一页金融数据趋势报告", "5 个风控岗位能力对照表"],
+    "major_plan": {
+      "primary": ["金融工程", "统计学", "数据科学"],
+      "secondary": ["经济学", "信息系统"],
+      "supporting": ["Python", "SQL", "合规基础"]
+    },
+    "city_ids": ["shanghai", "shenzhen", "singapore", "beijing"],
+    "first_project": "用公开金融数据做一个简单风险指标或趋势分析。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "education-tech-consultant",
+    "title": "教育科技产品/顾问",
+    "family": "人与服务系统",
+    "tags": ["教育", "技术", "服务"],
+    "summary": "适合把学习需求、技术工具和教育资源连接起来。",
+    "weights": {
+      "empathy": 3,
+      "social": 2,
+      "tech": 1,
+      "research": 1,
+      "structure": 1
+    },
+    "roles": ["课程设计", "学习顾问", "教育产品运营", "培训项目管理"],
+    "skills": ["教学设计", "学习科学", "沟通表达", "基础产品工具", "用户反馈分析"],
+    "barrier": {
+      "level": 3,
+      "label": "中等门槛",
+      "reasons": ["需要理解学习过程和用户需求", "需要把服务体验转化成产品或课程"]
+    },
+    "dropout_points": ["教育效果不一定立刻显现", "需要在商业目标和学习价值之间平衡"],
+    "evidence": ["一个 30 分钟微课程", "一份学习需求访谈记录", "一个课程反馈复盘"],
+    "major_plan": {
+      "primary": ["教育学", "教育技术", "心理学"],
+      "secondary": ["英语", "信息管理"],
+      "supporting": ["产品设计", "用户研究"]
+    },
+    "city_ids": ["beijing", "shanghai", "singapore"],
+    "first_project": "设计一个 30 分钟微课程，并邀请 3 位同学体验反馈。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "mental-health-direction",
+    "title": "临床/咨询心理相关方向",
+    "family": "人与服务系统",
+    "tags": ["心理", "助人", "专业"],
+    "summary": "适合长期理解人的情绪、行为与关系，并通过专业训练提供支持。",
+    "weights": {
+      "empathy": 4,
+      "research": 2,
+      "structure": 1,
+      "riskAware": 1
+    },
+    "roles": ["心理咨询助理", "心理测评", "学校心理支持", "员工援助项目"],
+    "skills": ["心理学基础", "伦理意识", "倾听能力", "研究方法", "长期督导"],
+    "barrier": {
+      "level": 5,
+      "label": "高门槛",
+      "reasons": ["需要长期专业训练和伦理意识", "需要在真实助人场景中持续督导"]
+    },
+    "dropout_points": ["长期面对人的困难会消耗情绪能量", "专业路径慢，需要耐心积累资质和经验"],
+    "evidence": ["一本心理学入门书笔记", "一次助人服务流程观察", "一份伦理边界学习记录"],
+    "major_plan": {
+      "primary": ["心理学", "应用心理学", "教育心理学"],
+      "secondary": ["社会工作", "公共卫生"],
+      "supporting": ["统计学", "访谈方法"]
+    },
+    "city_ids": ["shanghai", "beijing", "vancouver"],
+    "first_project": "阅读一本心理学入门书，整理 10 个概念和现实例子。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "brand-content-planner",
+    "title": "品牌内容策划",
+    "family": "创意内容与体验",
+    "tags": ["创意", "传播", "审美"],
+    "summary": "适合用故事、视觉和内容表达价值，影响人的感受与选择。",
+    "weights": {
+      "creative": 3,
+      "social": 2,
+      "empathy": 1,
+      "autonomy": 2
+    },
+    "roles": ["内容策划", "新媒体运营", "品牌文案", "活动创意", "社群内容"],
+    "skills": ["写作", "视觉审美", "社媒运营", "消费者洞察", "内容数据复盘"],
+    "barrier": {
+      "level": 3,
+      "label": "中等门槛",
+      "reasons": ["需要持续产出作品", "需要理解用户、品牌和传播效果"]
+    },
+    "dropout_points": ["作品会反复修改", "创意需要面对数据和商业目标"],
+    "evidence": ["一组内容选题", "一份品牌故事方案", "一次内容复盘报告"],
+    "major_plan": {
+      "primary": ["传播学", "广告学", "市场营销"],
+      "secondary": ["设计", "中文", "英语"],
+      "supporting": ["数据分析", "用户研究"]
+    },
+    "city_ids": ["shanghai", "chengdu", "guangzhou", "hangzhou"],
+    "first_project": "为一个你喜欢的品牌设计 7 天内容发布计划。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "public-nonprofit-operations",
+    "title": "公共管理/非营利项目运营",
+    "family": "公共政策与规则治理",
+    "tags": ["公共服务", "组织", "社会影响"],
+    "summary": "适合在公共议题中协调资源，推动教育、社区、公益或治理项目。",
+    "weights": {
+      "empathy": 3,
+      "structure": 2,
+      "leadership": 2,
+      "riskAware": 1
+    },
+    "roles": ["公益项目", "社区运营", "公共事务", "基金会项目", "社会创新项目"],
+    "skills": ["项目管理", "公共沟通", "预算意识", "影响力评估", "政策理解"],
+    "barrier": {
+      "level": 3,
+      "label": "中等门槛",
+      "reasons": ["需要理解公共议题和服务对象", "需要协调资源并评估影响"]
+    },
+    "dropout_points": ["推进节奏可能较慢", "资源限制和多方沟通会带来消耗"],
+    "evidence": ["一个社区问题方案", "一份利益相关方清单", "一次项目评估指标设计"],
+    "major_plan": {
+      "primary": ["公共管理", "社会工作", "社会学"],
+      "secondary": ["公共政策", "教育学"],
+      "supporting": ["项目管理", "数据分析"]
+    },
+    "city_ids": ["guangzhou", "chengdu", "shanghai", "beijing", "hongkong"],
+    "first_project": "选择一个社区问题，设计目标、对象、资源和评估指标。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "urban-transport-research",
+    "title": "城市规划/交通研究助理",
+    "family": "公共政策与规则治理",
+    "tags": ["城市", "数据", "公共政策"],
+    "summary": "适合研究城市空间、交通系统和人的移动方式。",
+    "weights": {
+      "research": 3,
+      "mobility": 2,
+      "structure": 2,
+      "tech": 1
+    },
+    "roles": ["交通分析", "城市研究", "GIS 分析", "政策评估", "规划咨询"],
+    "skills": ["GIS", "数据分析", "政策阅读", "空间观察", "报告写作"],
+    "barrier": {
+      "level": 4,
+      "label": "较高门槛",
+      "reasons": ["需要空间分析和数据工具", "需要理解城市政策和现场观察"]
+    },
+    "dropout_points": ["资料和现场情况可能复杂", "项目周期较长，成果不一定立刻显现"],
+    "evidence": ["一条通勤路线观察报告", "一张简单 GIS 或地图分析", "一份城市问题政策摘要"],
+    "major_plan": {
+      "primary": ["城市规划", "交通工程", "地理信息科学"],
+      "secondary": ["公共政策", "土木工程"],
+      "supporting": ["数据分析", "GIS"]
+    },
+    "city_ids": ["shanghai", "singapore", "hongkong", "beijing"],
+    "first_project": "观察一条通勤路线，记录拥堵、换乘和体验问题。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "supply-chain-cross-border",
+    "title": "供应链/跨境电商运营",
+    "family": "商业运营与产业",
+    "tags": ["商业", "数据", "跨文化"],
+    "summary": "适合处理流程、库存、平台和跨地区协作之间的复杂关系。",
+    "weights": {
+      "structure": 3,
+      "tech": 1,
+      "mobility": 2,
+      "leadership": 1
+    },
+    "roles": ["跨境电商运营", "供应链计划", "物流协调", "平台运营", "采购分析"],
+    "skills": ["Excel/SQL", "平台规则", "物流基础", "英语沟通", "成本分析"],
+    "barrier": {
+      "level": 3,
+      "label": "中等门槛",
+      "reasons": ["需要理解平台和物流流程", "需要处理成本、库存和跨地区协作"]
+    },
+    "dropout_points": ["结果压力直接", "库存、物流和平台规则变化会影响节奏"],
+    "evidence": ["一个商品链路拆解", "一份成本和渠道分析", "一张供应链流程图"],
+    "major_plan": {
+      "primary": ["物流管理", "国际贸易", "电子商务"],
+      "secondary": ["工商管理", "数据科学"],
+      "supporting": ["英语", "SQL", "成本分析"]
+    },
+    "city_ids": ["shenzhen", "guangzhou", "hangzhou", "singapore"],
+    "first_project": "选一个商品，拆解从生产、物流到线上销售的完整链路。",
+    "source_quality": "heuristic"
+  },
+  {
+    "id": "game-interaction-designer",
+    "title": "游戏/互动体验设计师",
+    "family": "创意内容与体验",
+    "tags": ["互动", "创意", "技术"],
+    "summary": "适合设计规则、反馈和沉浸体验，让用户在互动中获得乐趣。",
+    "weights": {
+      "creative": 3,
+      "tech": 2,
+      "empathy": 1,
+      "autonomy": 2
+    },
+    "roles": ["游戏策划", "关卡设计", "交互设计", "叙事设计", "原型制作"],
+    "skills": ["交互原型", "用户体验", "游戏机制", "脚本工具", "审美表达"],
+    "barrier": {
+      "level": 4,
+      "label": "较高门槛",
+      "reasons": ["需要创意、技术和用户体验结合", "需要用作品证明设计能力"]
+    },
+    "dropout_points": ["作品迭代密集", "创意需要被玩法、技术和用户反馈检验"],
+    "evidence": ["一个纸面游戏原型", "一个网页小游戏原型", "一份关卡或机制说明"],
+    "major_plan": {
+      "primary": ["数字媒体", "交互设计", "计算机科学"],
+      "secondary": ["动画", "心理学"],
+      "supporting": ["产品设计", "用户研究"]
+    },
+    "city_ids": ["shanghai", "shenzhen", "chengdu"],
+    "first_project": "设计一个 5 分钟可玩的纸面游戏或网页小游戏原型。",
+    "source_quality": "heuristic"
+  }
+]

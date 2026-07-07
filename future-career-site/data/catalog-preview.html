@@ -1,0 +1,995 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future Path 数据目录预览</title>
+    <style>
+      :root { --ink: #1f2933; --muted: #667085; --line: #e5e7eb; --teal: #0f766e; --bg: #f7f4ee; }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: Arial, "Microsoft YaHei", sans-serif; color: var(--ink); background: var(--bg); }
+      main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 36px 0 60px; }
+      h1 { margin: 0 0 8px; font-size: clamp(34px, 5vw, 58px); line-height: 1.05; }
+      h2 { margin: 32px 0 14px; font-size: 26px; }
+      p { color: var(--muted); line-height: 1.7; }
+      .stats { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+      .stats span, .chips span { border-radius: 999px; background: #e9f7f4; color: var(--teal); font-weight: 800; }
+      .stats span { padding: 10px 14px; }
+      .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+      .card { padding: 18px; border-radius: 8px; background: white; box-shadow: 0 12px 28px rgba(38, 35, 30, 0.09); }
+      .topline { display: flex; gap: 10px; justify-content: space-between; align-items: start; }
+      .topline strong { font-size: 20px; }
+      .topline em { color: var(--muted); font-style: normal; font-size: 13px; text-align: right; }
+      .chips { display: flex; flex-wrap: wrap; gap: 7px; margin: 12px 0; }
+      .chips span { padding: 6px 9px; font-size: 12px; }
+      dl { display: grid; gap: 8px; margin: 12px 0 0; }
+      dt { color: var(--teal); font-size: 13px; font-weight: 900; }
+      dd { margin: 3px 0 0; color: var(--muted); line-height: 1.55; }
+      @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Future Path 数据目录预览</h1>
+      <p>生成时间：2026/7/7 09:33:35。这是 sample JSON 的静态预览页，用来检查内容结构是否清楚。</p>
+      <div class="stats">
+        <span>12 个职业</span>
+        <span>9 个城市</span>
+        <span>50 个专业</span>
+      </div>
+
+      <h2>职业样本</h2>
+      <section class="grid">
+    <article class="card">
+      <div class="topline">
+        <strong>用户体验研究员</strong>
+        <em>技术产品与数据</em>
+      </div>
+      <p>适合把人的真实需求、行为和痛点转化成产品或服务改进方向。</p>
+      <div class="chips"><span>研究</span><span>用户</span><span>产品</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>3 / 5 · 中等门槛</dd></div>
+        <div><dt>岗位</dt><dd>用户访谈、问卷研究、可用性测试、用户画像</dd></div>
+        <div><dt>证据</dt><dd>一份 5 人访谈报告；一个用户旅程图</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>数据分析师</strong>
+        <em>技术产品与数据</em>
+      </div>
+      <p>适合从复杂信息中找规律，用证据支持业务和管理决策。</p>
+      <div class="chips"><span>数据</span><span>商业</span><span>逻辑</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>4 / 5 · 较高门槛</dd></div>
+        <div><dt>岗位</dt><dd>商业分析、运营分析、市场分析、数据可视化</dd></div>
+        <div><dt>证据</dt><dd>一页公开数据分析报告；一个可复用的数据看板</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>产品经理</strong>
+        <em>技术产品与数据</em>
+      </div>
+      <p>适合连接用户、技术和商业，把想法推进成真实产品。</p>
+      <div class="chips"><span>产品</span><span>协调</span><span>创新</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>3 / 5 · 中等门槛</dd></div>
+        <div><dt>岗位</dt><dd>需求分析、产品设计、原型制作、项目协调</dd></div>
+        <div><dt>证据</dt><dd>一份产品需求文档；一个低保真原型</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>软件开发工程师</strong>
+        <em>技术产品与数据</em>
+      </div>
+      <p>适合把抽象问题变成稳定、可复用的工具、系统或应用。</p>
+      <div class="chips"><span>技术</span><span>建造</span><span>系统</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>5 / 5 · 高门槛</dd></div>
+        <div><dt>岗位</dt><dd>前端开发、后端开发、移动开发、AI 应用开发</dd></div>
+        <div><dt>证据</dt><dd>一个可运行的小网站；一个自动化脚本</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>金融科技/风险分析师</strong>
+        <em>技术产品与数据</em>
+      </div>
+      <p>适合在高信息密度环境中识别风险、建立规则并支持决策。</p>
+      <div class="chips"><span>金融</span><span>数据</span><span>风险</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>5 / 5 · 高门槛</dd></div>
+        <div><dt>岗位</dt><dd>风控分析、量化研究助理、信贷分析、反欺诈策略</dd></div>
+        <div><dt>证据</dt><dd>一个简单风险指标分析；一页金融数据趋势报告</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>教育科技产品/顾问</strong>
+        <em>人与服务系统</em>
+      </div>
+      <p>适合把学习需求、技术工具和教育资源连接起来。</p>
+      <div class="chips"><span>教育</span><span>技术</span><span>服务</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>3 / 5 · 中等门槛</dd></div>
+        <div><dt>岗位</dt><dd>课程设计、学习顾问、教育产品运营、培训项目管理</dd></div>
+        <div><dt>证据</dt><dd>一个 30 分钟微课程；一份学习需求访谈记录</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>临床/咨询心理相关方向</strong>
+        <em>人与服务系统</em>
+      </div>
+      <p>适合长期理解人的情绪、行为与关系，并通过专业训练提供支持。</p>
+      <div class="chips"><span>心理</span><span>助人</span><span>专业</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>5 / 5 · 高门槛</dd></div>
+        <div><dt>岗位</dt><dd>心理咨询助理、心理测评、学校心理支持、员工援助项目</dd></div>
+        <div><dt>证据</dt><dd>一本心理学入门书笔记；一次助人服务流程观察</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>品牌内容策划</strong>
+        <em>创意内容与体验</em>
+      </div>
+      <p>适合用故事、视觉和内容表达价值，影响人的感受与选择。</p>
+      <div class="chips"><span>创意</span><span>传播</span><span>审美</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>3 / 5 · 中等门槛</dd></div>
+        <div><dt>岗位</dt><dd>内容策划、新媒体运营、品牌文案、活动创意</dd></div>
+        <div><dt>证据</dt><dd>一组内容选题；一份品牌故事方案</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>公共管理/非营利项目运营</strong>
+        <em>公共政策与规则治理</em>
+      </div>
+      <p>适合在公共议题中协调资源，推动教育、社区、公益或治理项目。</p>
+      <div class="chips"><span>公共服务</span><span>组织</span><span>社会影响</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>3 / 5 · 中等门槛</dd></div>
+        <div><dt>岗位</dt><dd>公益项目、社区运营、公共事务、基金会项目</dd></div>
+        <div><dt>证据</dt><dd>一个社区问题方案；一份利益相关方清单</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>城市规划/交通研究助理</strong>
+        <em>公共政策与规则治理</em>
+      </div>
+      <p>适合研究城市空间、交通系统和人的移动方式。</p>
+      <div class="chips"><span>城市</span><span>数据</span><span>公共政策</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>4 / 5 · 较高门槛</dd></div>
+        <div><dt>岗位</dt><dd>交通分析、城市研究、GIS 分析、政策评估</dd></div>
+        <div><dt>证据</dt><dd>一条通勤路线观察报告；一张简单 GIS 或地图分析</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>供应链/跨境电商运营</strong>
+        <em>商业运营与产业</em>
+      </div>
+      <p>适合处理流程、库存、平台和跨地区协作之间的复杂关系。</p>
+      <div class="chips"><span>商业</span><span>数据</span><span>跨文化</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>3 / 5 · 中等门槛</dd></div>
+        <div><dt>岗位</dt><dd>跨境电商运营、供应链计划、物流协调、平台运营</dd></div>
+        <div><dt>证据</dt><dd>一个商品链路拆解；一份成本和渠道分析</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>游戏/互动体验设计师</strong>
+        <em>创意内容与体验</em>
+      </div>
+      <p>适合设计规则、反馈和沉浸体验，让用户在互动中获得乐趣。</p>
+      <div class="chips"><span>互动</span><span>创意</span><span>技术</span></div>
+      <dl>
+        <div><dt>门槛</dt><dd>4 / 5 · 较高门槛</dd></div>
+        <div><dt>岗位</dt><dd>游戏策划、关卡设计、交互设计、叙事设计</dd></div>
+        <div><dt>证据</dt><dd>一个纸面游戏原型；一个网页小游戏原型</dd></div>
+      </dl>
+    </article>
+  </section>
+
+      <h2>城市样本</h2>
+      <section class="grid">
+    <article class="card">
+      <div class="topline">
+        <strong>上海</strong>
+        <em>east_china</em>
+      </div>
+      <p>金融、品牌、消费、国际企业、专业服务集中</p>
+      <div class="chips"><span>finance</span><span>brand</span><span>commerce</span><span>global</span><span>creative</span></div>
+      <dl>
+        <div><dt>成本</dt><dd>5 / 5</dd></div>
+        <div><dt>节奏</dt><dd>5 / 5</dd></div>
+        <div><dt>稳定路径</dt><dd>3 / 5</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>深圳</strong>
+        <em>south_china</em>
+      </div>
+      <p>硬件、软件、跨境电商、创新创业活跃</p>
+      <div class="chips"><span>tech</span><span>hardware</span><span>startup</span><span>supplyChain</span><span>commerce</span></div>
+      <dl>
+        <div><dt>成本</dt><dd>4 / 5</dd></div>
+        <div><dt>节奏</dt><dd>5 / 5</dd></div>
+        <div><dt>稳定路径</dt><dd>2 / 5</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>杭州</strong>
+        <em>east_china</em>
+      </div>
+      <p>互联网、数字经济、电商和内容生态较强</p>
+      <div class="chips"><span>tech</span><span>data</span><span>commerce</span><span>content</span><span>brand</span></div>
+      <dl>
+        <div><dt>成本</dt><dd>4 / 5</dd></div>
+        <div><dt>节奏</dt><dd>4 / 5</dd></div>
+        <div><dt>稳定路径</dt><dd>2 / 5</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>北京</strong>
+        <em>north_china</em>
+      </div>
+      <p>政策、科研、互联网总部、文化机构集中</p>
+      <div class="chips"><span>policy</span><span>research</span><span>tech</span><span>culture</span><span>education</span></div>
+      <dl>
+        <div><dt>成本</dt><dd>5 / 5</dd></div>
+        <div><dt>节奏</dt><dd>5 / 5</dd></div>
+        <div><dt>稳定路径</dt><dd>5 / 5</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>新加坡</strong>
+        <em>southeast_asia</em>
+      </div>
+      <p>金融科技、教育科技、国际组织和区域总部集中</p>
+      <div class="chips"><span>finance</span><span>tech</span><span>education</span><span>global</span><span>policy</span></div>
+      <dl>
+        <div><dt>成本</dt><dd>5 / 5</dd></div>
+        <div><dt>节奏</dt><dd>4 / 5</dd></div>
+        <div><dt>稳定路径</dt><dd>4 / 5</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>广州</strong>
+        <em>south_china</em>
+      </div>
+      <p>贸易、消费、公共服务、文创和供应链基础强</p>
+      <div class="chips"><span>commerce</span><span>supplyChain</span><span>publicService</span><span>culture</span><span>brand</span></div>
+      <dl>
+        <div><dt>成本</dt><dd>3 / 5</dd></div>
+        <div><dt>节奏</dt><dd>3 / 5</dd></div>
+        <div><dt>稳定路径</dt><dd>4 / 5</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>成都</strong>
+        <em>west_china</em>
+      </div>
+      <p>文旅、游戏、内容、生活服务和公共项目活跃</p>
+      <div class="chips"><span>culture</span><span>game</span><span>tourism</span><span>content</span><span>publicService</span></div>
+      <dl>
+        <div><dt>成本</dt><dd>3 / 5</dd></div>
+        <div><dt>节奏</dt><dd>3 / 5</dd></div>
+        <div><dt>稳定路径</dt><dd>3 / 5</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>香港</strong>
+        <em>south_china</em>
+      </div>
+      <p>金融、法律、国际教育、专业服务和跨境合作集中</p>
+      <div class="chips"><span>finance</span><span>law</span><span>global</span><span>education</span><span>research</span></div>
+      <dl>
+        <div><dt>成本</dt><dd>5 / 5</dd></div>
+        <div><dt>节奏</dt><dd>5 / 5</dd></div>
+        <div><dt>稳定路径</dt><dd>3 / 5</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>温哥华</strong>
+        <em>north_america</em>
+      </div>
+      <p>教育、可持续发展、游戏、健康和多元文化环境突出</p>
+      <div class="chips"><span>education</span><span>sustainability</span><span>game</span><span>health</span><span>global</span></div>
+      <dl>
+        <div><dt>成本</dt><dd>5 / 5</dd></div>
+        <div><dt>节奏</dt><dd>2 / 5</dd></div>
+        <div><dt>稳定路径</dt><dd>3 / 5</dd></div>
+      </dl>
+    </article>
+  </section>
+
+      <h2>专业样本</h2>
+      <section class="grid">
+    <article class="card">
+      <div class="topline">
+        <strong>心理学</strong>
+        <em>人与行为</em>
+      </div>
+      <p>心理学帮助你理解人的行为、情绪、认知和关系，适合连接用户研究、教育、心理健康和组织发展方向。</p>
+      <div class="chips"><span>empathy</span><span>research</span><span>social</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>普通心理学、发展心理学、社会心理学、心理统计</dd></div>
+        <div><dt>连接职业</dt><dd>ux-researcher、education-tech-consultant、mental-health-direction</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>数据科学</strong>
+        <em>技术与数据</em>
+      </div>
+      <p>数据科学训练你用数据、统计和计算工具理解现实问题，适合数据分析、金融科技、产品分析和城市研究。</p>
+      <div class="chips"><span>research</span><span>tech</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>统计学、Python、SQL、机器学习基础</dd></div>
+        <div><dt>连接职业</dt><dd>data-analyst、fintech-risk-analyst、product-manager</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>计算机科学</strong>
+        <em>技术与系统</em>
+      </div>
+      <p>计算机科学训练你理解程序、系统、算法和工程实践，适合软件开发、产品技术、AI 应用和数据工具方向。</p>
+      <div class="chips"><span>tech</span><span>research</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>程序设计、数据结构、算法、数据库</dd></div>
+        <div><dt>连接职业</dt><dd>software-engineer、product-manager、data-analyst</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>统计学</strong>
+        <em>技术与数据</em>
+      </div>
+      <p>统计学训练你理解样本、概率、模型和不确定性，是数据分析、金融风控和研究工作的基础。</p>
+      <div class="chips"><span>research</span><span>structure</span><span>tech</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>概率论、数理统计、回归分析、实验设计</dd></div>
+        <div><dt>连接职业</dt><dd>data-analyst、fintech-risk-analyst、ux-researcher</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>信息管理</strong>
+        <em>技术与组织</em>
+      </div>
+      <p>信息管理连接业务、数据和系统，适合产品、数据分析、运营和组织数字化方向。</p>
+      <div class="chips"><span>tech</span><span>structure</span><span>social</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>信息系统、数据库、管理学、业务流程</dd></div>
+        <div><dt>连接职业</dt><dd>product-manager、data-analyst、education-tech-consultant</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>产品设计</strong>
+        <em>产品与体验</em>
+      </div>
+      <p>产品设计训练你把用户需求、交互流程和商业目标转化为可用方案。</p>
+      <div class="chips"><span>empathy</span><span>creative</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>用户研究、交互设计、原型工具、可用性测试</dd></div>
+        <div><dt>连接职业</dt><dd>product-manager、ux-researcher、education-tech-consultant</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>经济学</strong>
+        <em>商业与社会</em>
+      </div>
+      <p>经济学帮助你理解市场、激励、资源配置和政策影响，适合金融、商业分析和公共政策方向。</p>
+      <div class="chips"><span>research</span><span>structure</span><span>riskAware</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>微观经济学、宏观经济学、计量经济学、金融基础</dd></div>
+        <div><dt>连接职业</dt><dd>data-analyst、fintech-risk-analyst、product-manager</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>工商管理</strong>
+        <em>商业与组织</em>
+      </div>
+      <p>工商管理帮助你理解组织、市场、运营和资源配置，适合产品、运营、项目和创业方向。</p>
+      <div class="chips"><span>leadership</span><span>social</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>管理学、市场营销、组织行为、运营管理</dd></div>
+        <div><dt>连接职业</dt><dd>product-manager、education-tech-consultant</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>传播学</strong>
+        <em>内容与传播</em>
+      </div>
+      <p>传播学训练你理解信息如何被生产、分发和接受，适合品牌内容、用户研究和公共沟通方向。</p>
+      <div class="chips"><span>creative</span><span>social</span><span>empathy</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>传播理论、新闻写作、媒介研究、广告与品牌</dd></div>
+        <div><dt>连接职业</dt><dd>brand-content-planner、ux-researcher、public-nonprofit-operations</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>公共管理</strong>
+        <em>公共服务</em>
+      </div>
+      <p>公共管理关注公共资源、组织治理和服务设计，适合公益项目、公共事务和社会创新方向。</p>
+      <div class="chips"><span>structure</span><span>leadership</span><span>empathy</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>公共管理学、公共政策、项目管理、公共财政</dd></div>
+        <div><dt>连接职业</dt><dd>public-nonprofit-operations、urban-transport-research</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>社会工作</strong>
+        <em>人与公共服务</em>
+      </div>
+      <p>社会工作训练你理解个体、家庭和社区处境，适合公益项目、心理支持和公共服务方向。</p>
+      <div class="chips"><span>empathy</span><span>social</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>社会工作导论、个案工作、小组工作、社区工作</dd></div>
+        <div><dt>连接职业</dt><dd>public-nonprofit-operations、mental-health-direction</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>物流管理</strong>
+        <em>商业与产业</em>
+      </div>
+      <p>物流管理关注商品、库存、运输和供应链协作，适合供应链、跨境电商和运营方向。</p>
+      <div class="chips"><span>structure</span><span>tech</span><span>mobility</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>供应链管理、物流系统、采购管理、仓储与配送</dd></div>
+        <div><dt>连接职业</dt><dd>supply-chain-cross-border</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>数字媒体</strong>
+        <em>内容与互动</em>
+      </div>
+      <p>数字媒体连接内容、视觉、交互和技术，适合游戏、互动体验、品牌内容和新媒体方向。</p>
+      <div class="chips"><span>creative</span><span>tech</span><span>autonomy</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>数字媒体设计、交互基础、影像制作、游戏设计</dd></div>
+        <div><dt>连接职业</dt><dd>game-interaction-designer、brand-content-planner</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>地理信息科学</strong>
+        <em>城市与数据</em>
+      </div>
+      <p>地理信息科学训练你用空间数据理解城市、交通、环境和区域差异。</p>
+      <div class="chips"><span>research</span><span>tech</span><span>mobility</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>地图学、GIS 软件、空间分析、遥感基础</dd></div>
+        <div><dt>连接职业</dt><dd>urban-transport-research</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>社会学</strong>
+        <em>社会与研究</em>
+      </div>
+      <p>社会学帮助你理解群体、制度、文化和日常行为，适合用户研究、公共服务和社会议题分析。</p>
+      <div class="chips"><span>research</span><span>empathy</span><span>social</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>社会学概论、社会调查方法、社会心理、城市社会学</dd></div>
+        <div><dt>连接职业</dt><dd>ux-researcher、public-nonprofit-operations</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>人机交互</strong>
+        <em>产品与体验</em>
+      </div>
+      <p>人机交互连接心理、设计和技术，关注人如何更自然地使用数字产品。</p>
+      <div class="chips"><span>empathy</span><span>tech</span><span>creative</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>交互设计、用户研究、可用性测试、认知心理</dd></div>
+        <div><dt>连接职业</dt><dd>ux-researcher、product-manager、game-interaction-designer</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>商业分析</strong>
+        <em>商业与数据</em>
+      </div>
+      <p>商业分析训练你把业务问题拆成指标、数据和决策建议。</p>
+      <div class="chips"><span>research</span><span>structure</span><span>tech</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>商业统计、SQL、数据可视化、运营分析</dd></div>
+        <div><dt>连接职业</dt><dd>data-analyst、product-manager、fintech-risk-analyst</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>信息系统</strong>
+        <em>技术与组织</em>
+      </div>
+      <p>信息系统关注组织如何使用软件、数据和流程提升效率。</p>
+      <div class="chips"><span>tech</span><span>structure</span><span>social</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>数据库、系统分析、业务流程、企业软件</dd></div>
+        <div><dt>连接职业</dt><dd>data-analyst、software-engineer、product-manager</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>Python</strong>
+        <em>技能模块</em>
+      </div>
+      <p>Python 是数据分析、自动化和 AI 应用常用工具，适合把重复工作变成程序。</p>
+      <div class="chips"><span>tech</span><span>research</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>基础语法、数据处理、文件自动化、Pandas</dd></div>
+        <div><dt>连接职业</dt><dd>data-analyst、fintech-risk-analyst、software-engineer</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>SQL</strong>
+        <em>技能模块</em>
+      </div>
+      <p>SQL 用来查询和整理数据库，是数据分析、产品分析和运营分析的基础工具。</p>
+      <div class="chips"><span>tech</span><span>structure</span><span>research</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>查询语句、聚合分析、多表连接、窗口函数</dd></div>
+        <div><dt>连接职业</dt><dd>data-analyst、fintech-risk-analyst、supply-chain-cross-border</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>数据可视化</strong>
+        <em>技能模块</em>
+      </div>
+      <p>数据可视化把复杂数据转成容易理解的图表和故事。</p>
+      <div class="chips"><span>research</span><span>creative</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>图表选择、仪表盘、可视化叙事、Tableau/BI</dd></div>
+        <div><dt>连接职业</dt><dd>data-analyst、brand-content-planner</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>项目管理</strong>
+        <em>技能模块</em>
+      </div>
+      <p>项目管理训练你把目标、资源、时间和风险组织起来，让事情可交付。</p>
+      <div class="chips"><span>structure</span><span>leadership</span><span>social</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>任务拆解、进度管理、风险管理、沟通机制</dd></div>
+        <div><dt>连接职业</dt><dd>product-manager、public-nonprofit-operations、software-engineer</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>用户研究</strong>
+        <em>技能模块</em>
+      </div>
+      <p>用户研究通过访谈、观察和测试理解真实用户需求。</p>
+      <div class="chips"><span>empathy</span><span>research</span><span>social</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>访谈设计、问卷设计、可用性测试、用户旅程</dd></div>
+        <div><dt>连接职业</dt><dd>ux-researcher、product-manager、brand-content-planner</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>软件工程</strong>
+        <em>技术与系统</em>
+      </div>
+      <p>软件工程关注如何稳定、高效地开发和维护真实软件。</p>
+      <div class="chips"><span>tech</span><span>structure</span><span>research</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>软件设计、版本控制、测试、工程实践</dd></div>
+        <div><dt>连接职业</dt><dd>software-engineer、product-manager</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>人工智能</strong>
+        <em>技术与数据</em>
+      </div>
+      <p>人工智能关注让机器从数据中学习并完成识别、预测和生成任务。</p>
+      <div class="chips"><span>tech</span><span>research</span><span>adventure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>机器学习、深度学习、数据处理、模型评估</dd></div>
+        <div><dt>连接职业</dt><dd>software-engineer、data-analyst</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>市场营销</strong>
+        <em>商业与传播</em>
+      </div>
+      <p>市场营销研究用户、品牌、渠道和增长，适合品牌内容、产品增长和商业运营。</p>
+      <div class="chips"><span>creative</span><span>social</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>消费者行为、品牌管理、渠道运营、市场调研</dd></div>
+        <div><dt>连接职业</dt><dd>brand-content-planner、product-manager</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>教育学</strong>
+        <em>教育与发展</em>
+      </div>
+      <p>教育学关注学习、课程、学校和人的发展，适合教育科技、咨询和公共服务。</p>
+      <div class="chips"><span>empathy</span><span>social</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>教育学原理、课程设计、学习心理、教育评价</dd></div>
+        <div><dt>连接职业</dt><dd>education-tech-consultant、public-nonprofit-operations</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>教育技术</strong>
+        <em>教育与技术</em>
+      </div>
+      <p>教育技术连接学习科学、产品设计和数字工具，适合教育产品和学习体验设计。</p>
+      <div class="chips"><span>empathy</span><span>tech</span><span>creative</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>学习设计、教育产品、多媒体课件、学习数据</dd></div>
+        <div><dt>连接职业</dt><dd>education-tech-consultant、product-manager</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>公共政策</strong>
+        <em>公共服务</em>
+      </div>
+      <p>公共政策训练你分析社会问题、政策工具和执行效果。</p>
+      <div class="chips"><span>research</span><span>structure</span><span>riskAware</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>政策分析、社会调查、公共经济、政策评估</dd></div>
+        <div><dt>连接职业</dt><dd>public-nonprofit-operations、urban-transport-research</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>城市规划</strong>
+        <em>城市与空间</em>
+      </div>
+      <p>城市规划研究土地、交通、公共空间和城市发展，适合城市研究与规划咨询方向。</p>
+      <div class="chips"><span>research</span><span>creative</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>城市规划原理、城市设计、交通规划、GIS</dd></div>
+        <div><dt>连接职业</dt><dd>urban-transport-research</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>国际贸易</strong>
+        <em>商业与全球化</em>
+      </div>
+      <p>国际贸易关注跨境商品、渠道、规则和市场差异，适合跨境电商和供应链方向。</p>
+      <div class="chips"><span>mobility</span><span>social</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>国际贸易实务、跨境电商、商务英语、关务基础</dd></div>
+        <div><dt>连接职业</dt><dd>supply-chain-cross-border</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>电子商务</strong>
+        <em>商业与运营</em>
+      </div>
+      <p>电子商务关注线上交易、平台规则、用户增长和供应链协同。</p>
+      <div class="chips"><span>structure</span><span>tech</span><span>social</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>平台运营、商品管理、用户增长、数据分析</dd></div>
+        <div><dt>连接职业</dt><dd>supply-chain-cross-border、brand-content-planner</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>交互设计</strong>
+        <em>产品与体验</em>
+      </div>
+      <p>交互设计关注用户完成任务的流程、反馈和界面行为。</p>
+      <div class="chips"><span>creative</span><span>empathy</span><span>tech</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>信息架构、原型设计、可用性测试、界面规范</dd></div>
+        <div><dt>连接职业</dt><dd>game-interaction-designer、product-manager、ux-researcher</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>英语</strong>
+        <em>语言与跨文化</em>
+      </div>
+      <p>英语能力能支持跨境业务、国际项目、教育咨询和资料研究。</p>
+      <div class="chips"><span>mobility</span><span>social</span><span>research</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>学术阅读、商务写作、口语表达、跨文化沟通</dd></div>
+        <div><dt>连接职业</dt><dd>education-tech-consultant、supply-chain-cross-border、brand-content-planner</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>访谈方法</strong>
+        <em>技能模块</em>
+      </div>
+      <p>访谈方法帮助你用开放问题理解人的经历、动机和真实约束。</p>
+      <div class="chips"><span>empathy</span><span>research</span><span>social</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>提纲设计、追问技巧、记录整理、主题分析</dd></div>
+        <div><dt>连接职业</dt><dd>ux-researcher、mental-health-direction</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>合规基础</strong>
+        <em>技能模块</em>
+      </div>
+      <p>合规基础帮助你理解规则、风险边界和组织责任，适合金融、平台和公共领域。</p>
+      <div class="chips"><span>riskAware</span><span>structure</span><span>research</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>合规框架、风险识别、数据隐私、金融监管</dd></div>
+        <div><dt>连接职业</dt><dd>fintech-risk-analyst</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>成本分析</strong>
+        <em>技能模块</em>
+      </div>
+      <p>成本分析帮助你理解采购、物流、库存和运营决策背后的成本结构。</p>
+      <div class="chips"><span>structure</span><span>riskAware</span><span>tech</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>成本构成、采购分析、库存周转、利润测算</dd></div>
+        <div><dt>连接职业</dt><dd>supply-chain-cross-border、data-analyst</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>中文</strong>
+        <em>语言与表达</em>
+      </div>
+      <p>中文写作能力支持内容策划、品牌表达、报告写作和公共沟通。</p>
+      <div class="chips"><span>creative</span><span>empathy</span><span>social</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>现代汉语、写作训练、叙事表达、编辑基础</dd></div>
+        <div><dt>连接职业</dt><dd>brand-content-planner、public-nonprofit-operations</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>动画</strong>
+        <em>内容与互动</em>
+      </div>
+      <p>动画训练你用运动、节奏和视觉叙事表达体验。</p>
+      <div class="chips"><span>creative</span><span>autonomy</span><span>tech</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>动画原理、分镜、动效设计、角色动作</dd></div>
+        <div><dt>连接职业</dt><dd>game-interaction-designer、brand-content-planner</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>工业设计</strong>
+        <em>产品与设计</em>
+      </div>
+      <p>工业设计训练你理解产品形态、使用体验和制造约束，适合产品、交互和创新方向。</p>
+      <div class="chips"><span>creative</span><span>empathy</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>产品造型、设计调研、材料工艺、原型制作</dd></div>
+        <div><dt>连接职业</dt><dd>product-manager、game-interaction-designer</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>数据分析</strong>
+        <em>技能模块</em>
+      </div>
+      <p>数据分析把问题转化为指标、数据处理和解释建议，是许多岗位的通用能力。</p>
+      <div class="chips"><span>research</span><span>tech</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>指标设计、数据清洗、描述统计、分析报告</dd></div>
+        <div><dt>连接职业</dt><dd>data-analyst、product-manager、brand-content-planner</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>金融工程</strong>
+        <em>金融与风险</em>
+      </div>
+      <p>金融工程结合金融、数学和计算工具，适合风控、量化分析和金融科技方向。</p>
+      <div class="chips"><span>research</span><span>tech</span><span>riskAware</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>金融数学、衍生品、风险管理、计量金融</dd></div>
+        <div><dt>连接职业</dt><dd>fintech-risk-analyst、data-analyst</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>应用心理学</strong>
+        <em>人与行为</em>
+      </div>
+      <p>应用心理学把心理学方法用于教育、组织、健康和用户体验等真实场景。</p>
+      <div class="chips"><span>empathy</span><span>research</span><span>social</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>咨询心理、心理测量、发展心理、统计方法</dd></div>
+        <div><dt>连接职业</dt><dd>mental-health-direction、ux-researcher</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>教育心理学</strong>
+        <em>教育与心理</em>
+      </div>
+      <p>教育心理学关注学习动机、认知发展和教学支持，适合教育产品与心理支持方向。</p>
+      <div class="chips"><span>empathy</span><span>research</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>学习心理、发展心理、教育评价、动机理论</dd></div>
+        <div><dt>连接职业</dt><dd>mental-health-direction、education-tech-consultant</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>公共卫生</strong>
+        <em>健康与社会</em>
+      </div>
+      <p>公共卫生关注群体健康、风险预防和服务系统，适合心理健康、政策和数据方向。</p>
+      <div class="chips"><span>empathy</span><span>research</span><span>riskAware</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>流行病学、卫生统计、健康教育、卫生政策</dd></div>
+        <div><dt>连接职业</dt><dd>mental-health-direction、public-nonprofit-operations</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>广告学</strong>
+        <em>商业与传播</em>
+      </div>
+      <p>广告学训练你理解品牌、创意、媒介和消费者沟通。</p>
+      <div class="chips"><span>creative</span><span>social</span><span>empathy</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>广告策划、品牌传播、消费者洞察、创意文案</dd></div>
+        <div><dt>连接职业</dt><dd>brand-content-planner</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>设计</strong>
+        <em>设计基础</em>
+      </div>
+      <p>设计基础训练你用视觉、结构和体验解决问题，可支撑品牌、产品和互动方向。</p>
+      <div class="chips"><span>creative</span><span>empathy</span><span>structure</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>视觉基础、版式、色彩、设计思维</dd></div>
+        <div><dt>连接职业</dt><dd>brand-content-planner、game-interaction-designer</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>交通工程</strong>
+        <em>城市与交通</em>
+      </div>
+      <p>交通工程研究道路、出行、流量和安全，适合交通规划和城市数据方向。</p>
+      <div class="chips"><span>research</span><span>structure</span><span>tech</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>交通流理论、道路工程、交通规划、交通调查</dd></div>
+        <div><dt>连接职业</dt><dd>urban-transport-research</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>土木工程</strong>
+        <em>工程与城市</em>
+      </div>
+      <p>土木工程关注基础设施、结构和建设过程，可连接城市、交通和项目管理。</p>
+      <div class="chips"><span>structure</span><span>tech</span><span>riskAware</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>工程力学、结构设计、道路桥梁、施工管理</dd></div>
+        <div><dt>连接职业</dt><dd>urban-transport-research</dd></div>
+      </dl>
+    </article>
+  
+    <article class="card">
+      <div class="topline">
+        <strong>GIS</strong>
+        <em>技能模块</em>
+      </div>
+      <p>GIS 是空间数据分析工具，能帮助你研究城市、交通、商业选址和环境问题。</p>
+      <div class="chips"><span>tech</span><span>research</span><span>mobility</span></div>
+      <dl>
+        <div><dt>课程</dt><dd>地图数据、空间分析、缓冲区分析、热力图</dd></div>
+        <div><dt>连接职业</dt><dd>urban-transport-research、data-analyst</dd></div>
+      </dl>
+    </article>
+  </section>
+    </main>
+  </body>
+</html>

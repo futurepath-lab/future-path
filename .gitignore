@@ -1,0 +1,15 @@
+.venv/
+.agents/
+.codex/
+__pycache__/
+*.pyc
+*.log
+*.optimized.jpg
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+build/
+.env
+.env.*
+!.env.example

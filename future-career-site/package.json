@@ -1,0 +1,14 @@
+{
+  "name": "future-career-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A static career exploration website for Future Path.",
+  "scripts": {
+    "validate:data": "node tools/validate-data.js",
+    "build:data": "node tools/build-data-bundle.js",
+    "build:preview": "node tools/build-data-preview.js",
+    "audit:deploy": "node tools/audit-deploy.js",
+    "check": "npm run validate:data && node --check script.js && npm run audit:deploy",
+    "prepare:deploy": "npm run validate:data && npm run build:data && npm run build:preview && npm run audit:deploy"
+  }
+}

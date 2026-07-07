@@ -1,0 +1,152 @@
+{
+  "version": "0.1.0",
+  "status": "draft",
+  "description": "Future Path content catalog schema draft for careers, cities, majors, questions, and scoring rules.",
+  "traits": [
+    "research",
+    "creative",
+    "social",
+    "tech",
+    "structure",
+    "empathy",
+    "leadership",
+    "autonomy",
+    "mobility",
+    "adventure",
+    "riskAware"
+  ],
+  "sourceQualityLevels": [
+    "heuristic",
+    "desk_research",
+    "expert_reviewed",
+    "data_connected"
+  ],
+  "career": {
+    "required": [
+      "id",
+      "title",
+      "family",
+      "summary",
+      "weights",
+      "roles",
+      "skills",
+      "barrier",
+      "dropout_points",
+      "evidence",
+      "major_plan",
+      "city_ids",
+      "first_project",
+      "source_quality"
+    ],
+    "fields": {
+      "id": "stable slug, e.g. ux-researcher",
+      "title": "display name",
+      "family": "career family",
+      "tags": "array of display tags",
+      "summary": "short recommendation reason",
+      "weights": "trait weight object",
+      "roles": "array of typical roles",
+      "skills": "array of required skills",
+      "barrier": {
+        "level": "1-5",
+        "label": "display label",
+        "reasons": "array of reasons"
+      },
+      "dropout_points": "array of realistic friction points",
+      "evidence": "array of suggested proof-of-fit artifacts",
+      "major_plan": {
+        "primary": "array of majors",
+        "secondary": "array of minors or adjacent majors",
+        "supporting": "array of supplementary topics"
+      },
+      "city_ids": "array of city ids",
+      "first_project": "small project for exploration",
+      "source_quality": "heuristic | desk_research | expert_reviewed | data_connected"
+    }
+  },
+  "city": {
+    "required": [
+      "id",
+      "name",
+      "region",
+      "country",
+      "cluster",
+      "industries",
+      "traits",
+      "cost_level",
+      "pace_level",
+      "stable_path_level",
+      "climate",
+      "culture",
+      "sights",
+      "image",
+      "data_status"
+    ],
+    "fields": {
+      "id": "stable slug, e.g. shanghai",
+      "name": "display city name",
+      "region": "region key",
+      "country": "country or territory",
+      "cluster": "dominant industry cluster",
+      "industries": "array of industry keys",
+      "traits": "array of matching trait keys",
+      "cost_level": "1-5 manual or data-driven estimate",
+      "pace_level": "1-5 manual or data-driven estimate",
+      "stable_path_level": "1-5 manual or data-driven estimate",
+      "climate": "short climate label",
+      "culture": "short city culture note",
+      "sights": "array of place names",
+      "image": "local asset path",
+      "data_status": {
+        "industry": "heuristic | desk_research | expert_reviewed | data_connected",
+        "job_density": "not_connected | heuristic | data_connected",
+        "cost": "manual_estimate | data_connected"
+      }
+    }
+  },
+  "major": {
+    "required": [
+      "id",
+      "name",
+      "category",
+      "intro",
+      "fit_traits",
+      "courses",
+      "connected_careers",
+      "college_path",
+      "misunderstandings",
+      "try_project"
+    ],
+    "fields": {
+      "id": "stable slug",
+      "name": "display major name",
+      "category": "major category",
+      "intro": "short description",
+      "fit_traits": "array of trait keys",
+      "courses": "array of course topics",
+      "connected_careers": "array of career ids",
+      "college_path": {
+        "year1": "array of preparation tasks",
+        "year2": "array of preparation tasks",
+        "year3": "array of preparation tasks",
+        "year4": "array of preparation tasks"
+      },
+      "misunderstandings": "array of common mistakes",
+      "try_project": "small exploration project"
+    }
+  },
+  "feedbackEvent": {
+    "fields": {
+      "id": "event id",
+      "createdAt": "ISO timestamp",
+      "type": "reject | nearby | lowerBarrier | stable | moreCreative",
+      "careerTitle": "career title at time of feedback",
+      "careerFamily": "career family at time of feedback",
+      "currentRank": "rank at time of feedback",
+      "currentScores": "fit score snapshot",
+      "topTraits": "top trait snapshot",
+      "profile": "home city and mobility preference snapshot",
+      "visibleRecommendations": "recommendation list snapshot"
+    }
+  }
+}

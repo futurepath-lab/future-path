@@ -1,0 +1,191 @@
+[
+  {
+    "id": "shanghai",
+    "name": "上海",
+    "region": "east_china",
+    "country": "中国",
+    "cluster": "金融、品牌、消费、国际企业、专业服务集中",
+    "industries": ["finance", "brand", "commerce", "global", "creative"],
+    "traits": ["social", "creative", "leadership", "mobility"],
+    "cost_level": 5,
+    "pace_level": 5,
+    "stable_path_level": 3,
+    "climate": "湿润温和",
+    "culture": "商业感、国际感和生活方式丰富，适合接触品牌、金融和专业服务。",
+    "sights": ["外滩", "武康路", "上海博物馆"],
+    "image": "./assets/images/city-shanghai.jpg",
+    "data_status": {
+      "industry": "heuristic",
+      "job_density": "not_connected",
+      "cost": "manual_estimate"
+    }
+  },
+  {
+    "id": "shenzhen",
+    "name": "深圳",
+    "region": "south_china",
+    "country": "中国",
+    "cluster": "硬件、软件、跨境电商、创新创业活跃",
+    "industries": ["tech", "hardware", "startup", "supplyChain", "commerce"],
+    "traits": ["tech", "adventure", "autonomy", "leadership"],
+    "cost_level": 4,
+    "pace_level": 5,
+    "stable_path_level": 2,
+    "climate": "温暖湿润",
+    "culture": "年轻、务实、效率高，适合愿意快速试错和进入产业一线的人。",
+    "sights": ["深圳湾", "华侨城", "南山科技园"],
+    "image": "./assets/images/city-shenzhen.jpg",
+    "data_status": {
+      "industry": "heuristic",
+      "job_density": "not_connected",
+      "cost": "manual_estimate"
+    }
+  },
+  {
+    "id": "hangzhou",
+    "name": "杭州",
+    "region": "east_china",
+    "country": "中国",
+    "cluster": "互联网、数字经济、电商和内容生态较强",
+    "industries": ["tech", "data", "commerce", "content", "brand"],
+    "traits": ["tech", "creative", "autonomy", "research"],
+    "cost_level": 4,
+    "pace_level": 4,
+    "stable_path_level": 2,
+    "climate": "江南湿润",
+    "culture": "兼具生活感与互联网气质，适合数字产品、电商、内容和创新服务。",
+    "sights": ["西湖", "良渚", "西溪湿地"],
+    "image": "./assets/images/city-hangzhou.jpg",
+    "data_status": {
+      "industry": "heuristic",
+      "job_density": "not_connected",
+      "cost": "manual_estimate"
+    }
+  },
+  {
+    "id": "beijing",
+    "name": "北京",
+    "region": "north_china",
+    "country": "中国",
+    "cluster": "政策、科研、互联网总部、文化机构集中",
+    "industries": ["policy", "research", "tech", "culture", "education"],
+    "traits": ["research", "structure", "riskAware"],
+    "cost_level": 5,
+    "pace_level": 5,
+    "stable_path_level": 5,
+    "climate": "四季分明",
+    "culture": "公共资源、文化机构和高校密集，城市气质偏宏大、专业和竞争。",
+    "sights": ["故宫", "国家博物馆", "798 艺术区"],
+    "image": "./assets/images/city-beijing.jpg",
+    "data_status": {
+      "industry": "heuristic",
+      "job_density": "not_connected",
+      "cost": "manual_estimate"
+    }
+  },
+  {
+    "id": "singapore",
+    "name": "新加坡",
+    "region": "southeast_asia",
+    "country": "新加坡",
+    "cluster": "金融科技、教育科技、国际组织和区域总部集中",
+    "industries": ["finance", "tech", "education", "global", "policy"],
+    "traits": ["mobility", "structure", "riskAware", "tech"],
+    "cost_level": 5,
+    "pace_level": 4,
+    "stable_path_level": 4,
+    "climate": "全年炎热湿润",
+    "culture": "多语言、多族群，适合区域总部、金融科技、教育和国际项目。",
+    "sights": ["滨海湾", "新加坡国立大学", "植物园"],
+    "image": "./assets/images/city-singapore.jpg",
+    "data_status": {
+      "industry": "heuristic",
+      "job_density": "not_connected",
+      "cost": "manual_estimate"
+    }
+  },
+  {
+    "id": "guangzhou",
+    "name": "广州",
+    "region": "south_china",
+    "country": "中国",
+    "cluster": "贸易、消费、公共服务、文创和供应链基础强",
+    "industries": ["commerce", "supplyChain", "publicService", "culture", "brand"],
+    "traits": ["social", "structure", "empathy", "leadership"],
+    "cost_level": 3,
+    "pace_level": 3,
+    "stable_path_level": 4,
+    "climate": "温暖湿润",
+    "culture": "城市生活气息浓，饮食文化、贸易传统和公共服务资源都很突出。",
+    "sights": ["珠江新城", "广州塔", "沙面"],
+    "image": "./assets/images/city-guangzhou.jpg",
+    "data_status": {
+      "industry": "heuristic",
+      "job_density": "not_connected",
+      "cost": "manual_estimate"
+    }
+  },
+  {
+    "id": "chengdu",
+    "name": "成都",
+    "region": "west_china",
+    "country": "中国",
+    "cluster": "文旅、游戏、内容、生活服务和公共项目活跃",
+    "industries": ["culture", "game", "tourism", "content", "publicService"],
+    "traits": ["creative", "empathy", "autonomy", "social"],
+    "cost_level": 3,
+    "pace_level": 3,
+    "stable_path_level": 3,
+    "climate": "温和湿润",
+    "culture": "城市包容度高，创意、游戏、文旅和生活服务氛围明显。",
+    "sights": ["宽窄巷子", "东郊记忆", "成都博物馆"],
+    "image": "./assets/images/city-chengdu.jpg",
+    "data_status": {
+      "industry": "heuristic",
+      "job_density": "not_connected",
+      "cost": "manual_estimate"
+    }
+  },
+  {
+    "id": "hongkong",
+    "name": "香港",
+    "region": "south_china",
+    "country": "中国",
+    "cluster": "金融、法律、国际教育、专业服务和跨境合作集中",
+    "industries": ["finance", "law", "global", "education", "research"],
+    "traits": ["mobility", "riskAware", "research", "social"],
+    "cost_level": 5,
+    "pace_level": 5,
+    "stable_path_level": 3,
+    "climate": "亚热带海洋性",
+    "culture": "专业服务、金融、法律和国际教育资源强，适合跨文化路径。",
+    "sights": ["维多利亚港", "中环", "西九文化区"],
+    "image": "./assets/images/city-hongkong.jpg",
+    "data_status": {
+      "industry": "heuristic",
+      "job_density": "not_connected",
+      "cost": "manual_estimate"
+    }
+  },
+  {
+    "id": "vancouver",
+    "name": "温哥华",
+    "region": "north_america",
+    "country": "加拿大",
+    "cluster": "教育、可持续发展、游戏、健康和多元文化环境突出",
+    "industries": ["education", "sustainability", "game", "health", "global"],
+    "traits": ["empathy", "creative", "mobility", "riskAware"],
+    "cost_level": 5,
+    "pace_level": 2,
+    "stable_path_level": 3,
+    "climate": "温和多雨",
+    "culture": "多元文化、教育和健康资源较好，适合重视生活质量的人。",
+    "sights": ["斯坦利公园", "格兰维尔岛", "英属哥伦比亚大学"],
+    "image": "./assets/images/city-vancouver.jpg",
+    "data_status": {
+      "industry": "heuristic",
+      "job_density": "not_connected",
+      "cost": "manual_estimate"
+    }
+  }
+]

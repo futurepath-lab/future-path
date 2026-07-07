@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Future Path 是一个未来职业探索测试网站，根据兴趣、性格、生活偏好和迁移意愿推荐职业方向、城市和大学专业。"
+    />
+    <title>Future Path | 未来工作选择测试</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="intro" id="intro">
+        <div class="intro-copy">
+          <p class="eyebrow">Future Path</p>
+          <h1>先别急着决定未来，先看看你适合在哪里发光</h1>
+          <p class="lead">
+            这不是给你贴标签的测试，而是一张温和的探索地图。我们会结合你的兴趣、优势、生活偏好和离家意愿，
+            推荐几个值得认真了解的职业方向与工作地区。
+          </p>
+          <button class="primary-button" id="startButton">开始探索</button>
+        </div>
+        <div class="intro-panel" aria-label="测试内容概览">
+          <div>
+            <span>01</span>
+            <strong>先聊一点背景</strong>
+            <p>你现在在哪里，愿不愿意离家远一点。</p>
+          </div>
+          <div>
+            <span>02</span>
+            <strong>做一组轻测试</strong>
+            <p>兴趣、性格、价值观、风险偏好和小技能。</p>
+          </div>
+          <div>
+            <span>03</span>
+            <strong>拿到探索报告</strong>
+            <p>职业、地区、原因、大学专业和入门项目。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-step hidden" id="profileStep">
+        <div class="profile-card">
+          <p class="eyebrow">Before Quiz</p>
+          <h2>先告诉我一点点你的现实情况</h2>
+          <p>
+            地点推荐不能只看性格，也要看你离家的接受程度。这里不需要非常精确，填一个城市或省份就可以。
+          </p>
+          <label for="homeCity">你目前主要居住在哪里？</label>
+          <input id="homeCity" type="text" placeholder="例如：杭州、山东、香港、成都" />
+
+          <fieldset>
+            <legend>你愿意去离家较远的地方工作吗？</legend>
+            <label><input type="radio" name="mobilityChoice" value="near" /> 更希望离家近一些</label>
+            <label><input type="radio" name="mobilityChoice" value="regional" checked /> 可以去同一大区或相邻省市</label>
+            <label><input type="radio" name="mobilityChoice" value="national" /> 全国范围都可以考虑</label>
+            <label><input type="radio" name="mobilityChoice" value="global" /> 国内外都愿意探索</label>
+          </fieldset>
+
+          <div class="profile-actions">
+            <button class="text-button" id="profileBackButton" type="button">返回首页</button>
+            <button class="primary-button" id="profileContinueButton" type="button">进入题目</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz hidden" id="quiz" aria-live="polite">
+        <div class="quiz-topbar">
+          <button class="text-button" id="backButton" type="button">返回</button>
+          <div class="progress-wrap" aria-label="测试进度">
+            <div class="progress-label">
+              <span id="progressText">第 1 / 34 题</span>
+              <span id="progressPercent">4%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+          </div>
+        </div>
+
+        <article class="question-card">
+          <p class="question-category" id="questionCategory"></p>
+          <h2 id="questionTitle"></h2>
+          <div class="options" id="options"></div>
+        </article>
+      </section>
+
+      <section class="results hidden" id="results">
+        <div class="results-header">
+          <div>
+            <p class="eyebrow">Your Report</p>
+            <h2>你的初步职业探索报告</h2>
+            <p id="summaryText"></p>
+          </div>
+          <div class="results-actions">
+            <button class="secondary-button" id="catalogButton" type="button">数据目录</button>
+            <button class="secondary-button" id="methodologyButton" type="button">推荐方法</button>
+            <button class="secondary-button" id="compareCareersButton" type="button">对比前 3 个职业</button>
+            <button class="secondary-button" id="saveReportButton" type="button">保存报告</button>
+            <button class="secondary-button" id="downloadReportButton" type="button">下载文本报告</button>
+            <button class="secondary-button" id="downloadFeedbackButton" type="button">下载反馈日志</button>
+            <button class="secondary-button" id="printReportButton" type="button">导出 PDF</button>
+            <button class="secondary-button" id="restartButton" type="button">重新测试</button>
+          </div>
+        </div>
+        <p class="save-status" id="saveStatus" aria-live="polite"></p>
+
+        <div class="score-grid" id="scoreGrid"></div>
+
+        <div class="recommendation-layout">
+          <section>
+            <div class="section-heading">
+              <span>职业方向</span>
+              <h3>逐个查看最值得探索的职业方向</h3>
+            </div>
+            <div class="career-list" id="careerList"></div>
+          </section>
+
+          <aside class="advice-panel">
+            <div class="section-heading">
+              <span>成长建议</span>
+              <h3>下一步可以做什么</h3>
+            </div>
+            <div id="nextSteps"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="career-detail-view hidden" id="careerDetailView">
+        <button class="text-button detail-back" id="detailBackButton" type="button">返回报告</button>
+        <div id="careerDetail"></div>
+      </section>
+
+      <footer class="site-footer">
+        <div>
+          <strong>Future Path</strong>
+          <p>这是职业探索工具，不是确定性测评或升学/就业承诺。请把推荐结果作为进一步访谈、调研和实践的起点。</p>
+        </div>
+        <div class="footer-links">
+          <a href="./docs/privacy-and-disclaimer.html">隐私与免责声明</a>
+          <a href="./docs/beta-test-guide.html">试用反馈指南</a>
+          <a href="./data/catalog-preview.html">数据目录预览</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./data/catalog-data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
