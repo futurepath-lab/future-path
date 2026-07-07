@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -28,8 +32,30 @@ body {
     Inter, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
 }
 
+img,
+svg,
+canvas {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+button,
+a,
+span,
+strong,
+dd,
+dt {
+  overflow-wrap: anywhere;
+}
+
 button {
   font: inherit;
+  touch-action: manipulation;
 }
 
 .app-shell {
@@ -1599,12 +1625,51 @@ button {
 
 @media (max-width: 560px) {
   .app-shell {
-    width: min(100% - 22px, 1120px);
-    padding: 18px 0;
+    width: min(100% - 20px, 1120px);
+    padding: 14px 0 22px;
+  }
+
+  .intro {
+    gap: 16px;
+    padding: 24px 0;
   }
 
   .intro-copy h1 {
-    font-size: 42px;
+    font-size: 36px;
+    line-height: 1.08;
+    margin-bottom: 14px;
+  }
+
+  .lead {
+    font-size: 16px;
+    line-height: 1.68;
+    margin-bottom: 20px;
+  }
+
+  .intro-panel div,
+  .profile-card,
+  .question-card,
+  .career-card,
+  .advice-panel,
+  .score-card,
+  .detail-panel,
+  .detail-hero,
+  .catalog-card,
+  .data-quality-panel,
+  .doc-article {
+    padding: 18px;
+  }
+
+  .profile-card h2,
+  .results-header h2,
+  .detail-hero h2,
+  .doc-article h1 {
+    font-size: 34px;
+    line-height: 1.12;
+  }
+
+  .quiz-topbar {
+    gap: 10px;
   }
 
   .quiz-topbar,
@@ -1620,6 +1685,68 @@ button {
 
   .results-actions button {
     width: 100%;
+  }
+
+  .question-card h2 {
+    font-size: 27px;
+    line-height: 1.22;
+    margin-bottom: 18px;
+  }
+
+  .option-button {
+    min-height: 60px;
+    padding: 14px 15px;
+  }
+
+  .option-button strong {
+    font-size: 16px;
+  }
+
+  .option-button span {
+    line-height: 1.5;
+  }
+
+  .career-card-top,
+  .career-title-row,
+  .comparison-score {
+    gap: 12px;
+  }
+
+  .career-nav,
+  .mini-actions,
+  .major-chips,
+  .catalog-filter-buttons,
+  .footer-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .career-nav button,
+  .mini-actions button,
+  .major-chips button,
+  .catalog-filter-buttons button,
+  .footer-links a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .visual-art {
+    min-height: 240px;
+  }
+
+  .detail-hero h2 {
+    font-size: 38px;
+  }
+
+  .doc-page {
+    width: min(100% - 20px, 920px);
+    padding: 18px 0 42px;
+  }
+
+  .secondary-doc-link {
+    margin: 8px 0 0;
   }
 
   .score-grid {
